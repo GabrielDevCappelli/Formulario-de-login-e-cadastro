@@ -24,11 +24,13 @@ a.links {
 
 h1 {
     font-size: 48px;
-    color: rgb(41, 221, 224);
+    color: rgb(47, 129, 130);
     padding: 2px 0 10px 0;
     font-family: Arial, sans-serif;
     text-align: center;
     padding-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #333;
 }
 
 h1:after {
@@ -41,6 +43,109 @@ h1:after {
     background: linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
 }
 
+p {
+    margin-bottom: 15px;
+}
 
+.content p:first-child {
+    margin: 0px;
+}
 
+label {
+    color: #000000;
+    position: relative;
+    font-weight: bold;
+}
 
+/* placeholder */
+::-webkit-input-placeholder {
+   color: #bebcbc;
+   font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+}
+
+input {
+    outline: none;
+}
+
+/*estilo dos input,  menos o checkbox */
+input:not([type="checkbox"]) {
+    width: 95%;
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #000000;
+
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(51, 179, 202, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(25, 61, 65, 0.6) inset;
+
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/* estilo botão submit */
+input[type="submit"] {
+    width: 100%!important;
+    cursor: cell;
+    background: rgb(55, 151, 173);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 28px;
+    border: 1px solid rgb(40, 100, 113);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px #333;
+
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    transition: 0.2s linear;
+}
+
+/*estilo do botão submit no hover */
+input[type="submit"]:hover {
+    background: #000000;
+}
+
+.link {
+    position: absolute;
+    background: #217a84;
+    color: #fff;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 20px;
+    text-align: right;
+    border-top: 3px solid #1c4d5c;
+    
+    -webkit-border-radius: 0 0  10px 10px;
+    border-radius: 0 0  10px 10px;
+}
+
+.link a {
+    font-weight: bold;
+    background: #f3f5eb;
+    padding: 6px;
+    color: rgb(15, 52, 60);
+    margin-left: 10px;
+    border: 2px solid #cbd518;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
+}
