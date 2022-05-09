@@ -3,5 +3,5 @@
 - [X] Criar pagina de cadastro.
 - [X] Criar pagina de login.
 - [X] Utilizar html5.
-- [ ] Utilizar css3.
-- [ ] Entregar no dia marcado.
+- [X] Utilizar css3.
+- [X] Entregar no dia marcado.
